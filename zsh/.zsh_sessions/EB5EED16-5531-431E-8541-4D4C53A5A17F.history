@@ -1,0 +1,647 @@
+cd Documents/Code/Other/LaTeX
+cat Nasif_Mauthoor
+git commit -m "20250601"
+git push
+cat .gitignore
+nvim .gitignore
+cd Downloads
+unzip SqiboPNG.rar
+brew install unrar
+unrar SqiboPNG.rar
+tar -xvf archive.rar
+tar -xvf SqiboPNG.rar
+cd SqiboPNG
+cd ~/.config
+cd OneDrive
+dc OneDrive\ -\ University\ of\ Guelph
+cd OneDrive\ -\ University\ of\ Guelph
+cd 02_Projects/01_Coding/05_LaTeX/
+cd resume-latex
+nvim ~/Documents/Code/Other/LaTeX
+ls -al
+git stash
+rm -rf resume-latex
+git clone git@github.com:Na51f/resume-latex.git
+cd ../01_React
+cd harris-tours
+git status
+cd OneDrive/OneDrive\ -\ University\ of\ Guelph
+cd 02_Projects/01_Coding/03_Unity
+find | grep Library
+find
+find .
+find . | grep Library | rm -rf
+for
+for p in $(find . | grep Library) ; do rm -rf "${p}"
+for p in $(find . | grep Library) ; do rm -rf "${p}" done
+find . | grep Library
+find -name 'Library
+find -name 'Library'
+find --help
+find -H
+for file in $( fgrep -l -r 'Library' ./ ); do rm "$file"; done
+brew install chitubox
+lsdisk
+lsblk
+brew install lsblk
+fdisk /dev/disk4s1
+sfdisk
+sdisk
+gdisk
+diskutil list
+fdisk /dev/disk4
+sudo fdisk /dev/disk4
+sudo fdisk /dev/disk4s1
+fdisk
+sudo fdisk /dev/disk4s1 -e
+ls CLEAR
+cat CLEAR
+rm -rf CLEAR
+brew upadte
+xdg-ninja
+echo $ZDOTDIR
+brew install uwufetch
+git clone https://github.com/TheDarkBug/uwufetch.git\
+cd uwufetch\
+make build # add "CFLAGS+=-D__IPHONE__" if you are building for iOS\
+sudo make install
+sudo make install
+brew install viu
+cd uwufetch/
+find / | grep uwu
+sudo find / | grep uwu
+uwufetch -I
+uwufetch -i
+sudo find / | grep uwu | grep mac
+brew install fvf
+brew install fzf
+cp ~/Downloads/image-removebg-preview\(1\).png ./macos.png
+sudo cp ~/Downloads/image-removebg-preview\(1\).png ./macos.png
+cp arch.png ~/Downloads
+finder
+ssh
+ssh 192.168.51.114:1232
+ssh 192.168.51.114
+uwufetch --help
+cd /usr/local/lib/uwufetch
+sudo cp ~/Downloads/macos.png .
+echo $OS
+ssh sqibo@192.168.51.114
+defaults write -g NSWindowShouldDragOnGesture -bool true
+ip
+ifconfig -f
+ifconfig|less
+ifconfig
+man less
+cd ls
+-a
+\
+\
+cd .config
+git pull
+nvim zsh/aliases
+cd Public
+cd Drop\ Box
+cd ../..\\
+
+cd Library/Mobile\ Documents/
+cd Documents/\[05\]\ Notebook
+cd \[05\]\ Notebook
+rm -rf .git
+rm -rf \[05\]\ Notebook
+gh repo clone Obsidian
+gh repo
+gh repo create Na51f
+gh repo create Na51f --public
+cd ../iCloud\\
+ls
+cD..
+reboot
+hist
+echo hist
+cat .config/zsh/aliases
+nvim .config/zsh/aliases
+source .config/zsh/aliases
+hist ssh
+git reset head --hard
+gh repo list
+make resume
+code ../../../../01_Personal/04_Documents/03_Resumes/20250417\ Nasif\ Mauthoor\ Resume.pdf
+make resume System Admin
+scrpy
+brew install scrpy
+brew install scrcpy
+brew install --cask android-platform-tools
+nvim .aerospace.toml
+\
+\
+defaults write com.apple.spaces spans-displays -bool true && killall SystemUIServer\
+\
+
+killall Obsidian
+cd /Users/moonytastic/Library/CloudStorage/OneDrive-UniversityofGuelph/02_Projects/01_Coding/91_Scripts/autocommit/
+git commit -m "added script"
+git add .
+git commit -m "manual commit"
+git push -u
+icloud
+cd ../iCloud\~md\~obsidian
+rm *
+rm -rf *
+rm -rf Documents
+cd iCloud\~md\~obsidian
+cd Documents
+mkdir Obsidian
+ls -a Obsidian
+rm -rf Obsidian/.obsidian
+cd Obsidian
+sudo mv /Users/moonytastic /Users/sqibo
+sudo -i
+exit
+ls Applications
+ls Applications/Remove\ Autodesk\ Fusion.app
+historu
+history
+brew upgrade
+git clone https://github.com/mogenson/PaperWM.spoon ~/.hammerspoon/Spoons/PaperWM.spoon
+ls 0a
+cd Downloads/SpoonInstall.spoon
+./init.lua
+sudo ./init.lua
+cd Applications
+cd /Applications
+brew install airserver
+scrcpy
+brew upgrade obs
+brew upgrade obs-studio
+brew uninstall obs
+ls .config
+ls /
+find /
+find / |grep obs
+sudo find / |grep obs
+mkdir obs_backup
+cd obs_backup
+ls Library
+ls Library |grep obs
+ls Library |grep OBS
+ls /Library |grep OBS
+cd Library/Application\ Support/obs-studio
+cp * ~/obs_backup
+cp -rf * ~/obs_backup
+brew install obs
+uwufetch
+brew upgrade aerospace
+git remote rm origin
+git remote add origin git@github.com:Na51f/aseprite-ipad.git\
+git branch -M main\
+git push -u origin main
+brew install cmake ninja
+ls ~
+ls ~/deps
+mkdir $HOME/deps\
+cd $HOME/deps\
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git\
+git clone -b aseprite-m124 https://github.com/aseprite/skia.git\
+export PATH="${PWD}/depot_tools:${PATH}"\
+cd skia\
+python3 tools/git-sync-deps\
+python3 bin/fetch-ninja\
+gn gen out/Release-arm64 --args="is_debug=false is_official_build=true skia_use_system_expat=false skia_use_system_icu=false skia_use_system_libjpeg_turbo=false skia_use_system_libpng=false skia_use_system_libwebp=false skia_use_system_zlib=false skia_use_freetype=true skia_use_harfbuzz=true skia_pdf_subset_harfbuzz=true skia_use_system_freetype2=false skia_use_system_harfbuzz=false target_cpu=\"arm64\" extra_cflags=[\"-stdlib=libc++\", \"-mmacosx-version-min=11.0\"] extra_cflags_cc=[\"-frtti\"]"\
+ninja -C out/Release-arm64 skia modules\
+
+ls tools
+ls ./out/Release-ios-arm64
+cat ~/.config/zsh/.zshrc
+brew install libimobiledevice\
+brew install ideviceinstaller\
+brew install caskroom/cask/brew-cask\
+brew install Caskroom/cask/osxfuse\
+brew install ifuse
+brew update
+brew install node
+nvim .config/zsh/.zshrc
+ls -d third_party/libjpeg-turbo
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  skia_use_system_fonts = false\
+  extra_cflags = ["-fembed-bitcode"]\
+'
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  skia_use_system_fonts = false\
+  skia_use_libjpeg_turbo = true\
+  extra_cflags = ["-fembed-bitcode"]\
+'
+cat out/Release-ios-arm64/args.gn
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  skia_use_system_fonts = false\
+  extra_cflags = [\
+    "-fembed-bitcode",\
+    "-I../../third_party/libjpeg-turbo"\
+  ]\
+'
+gn args --list out/Release-ios-arm64
+bin/gn args --list out/Release-ios-arm64
+bin/gn args --list out/Release-ios-arm64 | grep jpeg
+gn args --list out/Release-ios-arm64 | grep -i jpeg
+bin/gn args --list out/Release-ios-arm64 | grep -i jpeg
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  skia_use_system_fonts = false\
+  skia_use_system_libjpeg_turbo = false\
+  skia_use_libjpeg_turbo_decode = true\
+  skia_use_libjpeg_turbo_encode = true\
+  extra_cflags = ["-fembed-bitcode"]\
+'
+gn args --list out/Release-ios-arm64 | grep -i harfbuzz
+bin/gn args --list out/Release-ios-arm64 | grep -i harfbuzz
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  skia_use_system_fonts = false\
+  extra_cflags = ["-fembed-bitcode"]\
+\
+  # JPEG flags (working)\
+  skia_use_system_libjpeg_turbo = false\
+  skia_use_libjpeg_turbo_decode = true\
+  skia_use_libjpeg_turbo_encode = true\
+\
+  # HarfBuzz flags (newly added)\
+  skia_use_system_harfbuzz = false\
+  skia_use_harfbuzz = true\
+  skia_pdf_subset_harfbuzz = true\
+'
+bin/gn args --list out/Release-ios-arm64 | grep -i png
+bin/gn args --list out/Release-ios-arm64 | grep -i webp
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  skia_use_system_fonts = false\
+  extra_cflags = ["-fembed-bitcode"]\
+\
+  # JPEG flags (working)\
+  skia_use_system_libjpeg_turbo = false\
+  skia_use_libjpeg_turbo_decode = true\
+  skia_use_libjpeg_turbo_encode = true\
+\
+  # HarfBuzz flags (working)\
+  skia_use_system_harfbuzz = false\
+  skia_use_harfbuzz = true\
+  skia_pdf_subset_harfbuzz = true\
+\
+  # PNG flags (newly added)\
+  skia_use_system_libpng = false\
+  skia_use_libpng_decode = true\
+  skia_use_libpng_encode = true\
+\
+  # WebP flags (newly added)\
+  skia_use_system_libwebp = false\
+  skia_use_webp_decode = true\
+  skia_use_webp_encode = true\
+'
+bin/gn args --list out/Release-ios-arm64 | grep -i icu
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  skia_use_system_fonts = false\
+  extra_cflags = ["-fembed-bitcode"]\
+\
+  # JPEG flags (working)\
+  skia_use_system_libjpeg_turbo = false\
+  skia_use_libjpeg_turbo_decode = true\
+  skia_use_libjpeg_turbo_encode = true\
+\
+  # HarfBuzz flags (working)\
+  skia_use_system_harfbuzz = false\
+  skia_use_harfbuzz = true\
+  skia_pdf_subset_harfbuzz = true\
+\
+  # PNG flags (working)\
+  skia_use_system_libpng = false\
+  skia_use_libpng_decode = true\
+  skia_use_libpng_encode = true\
+\
+  # WebP flags (working)\
+  skia_use_system_webp = false\
+  skia_use_webp_decode = true\
+  skia_use_webp_encode = true\
+\
+  # ICU flags (final addition)\
+  skia_use_icu = true\
+  skia_use_system_icu = false\
+'
+source "/Users/moonytastic/deps/skia/third_party/externals/emsdk/emsdk_env.sh"
+ls /Applications/Xcode.app/Contents/Developer
+cd Library
+cd /Applications/Xcode.app/Contents/Developer
+cd ~
+xcode-select -p
+xcode-select --install\ 
+xcode-select --install
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developerxcodebuild -showsdks
+xcrun --sdk iphoneos --show-sdk-path
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  skia_use_system_fonts = false\
+  extra_cflags = ["-fembed-bitcode"]\
+\
+  # JPEG flags\
+  skia_use_system_libjpeg_turbo = false\
+  skia_use_libjpeg_turbo_decode = true\
+  skia_use_libjpeg_turbo_encode = true\
+\
+  # HarfBuzz flags\
+  skia_use_system_harfbuzz = false\
+  skia_use_harfbuzz = true\
+  skia_pdf_subset_harfbuzz = true\
+\
+  # PNG flags\
+  skia_use_system_libpng = false\
+  skia_use_libpng_decode = true\
+  skia_use_libpng_encode = true\
+\
+  # WebP flags\
+  skia_use_system_webp = false\
+  skia_use_webp_decode = true\
+  skia_use_webp_encode = true\
+\
+  # ICU flags\
+  skia_use_icu = true\
+  skia_use_system_icu = false\
+'
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  skia_use_system_fonts = false\
+  extra_cflags = ["-fembed-bitcode"]\
+\
+  # JPEG flags (working)\
+  skia_use_system_libjpeg_turbo = false\
+  skia_use_libjpeg_turbo_decode = true\
+  skia_use_libjpeg_turbo_encode = true\
+\
+  # HarfBuzz flags (working)\
+  skia_use_system_harfbuzz = false\
+  skia_use_harfbuzz = true\
+  skia_pdf_subset_harfbuzz = true\
+\
+  # PNG flags (newly added)\
+  skia_use_system_libpng = false\
+  skia_use_libpng_encode = true\
+  skia_use_libpng_decode = true\
+\
+  # WebP flags (newly added)\
+  skia_use_system_webp = false\
+  skia_use_webp_decode = true\
+  skia_use_webp_encode = true\
+'
+ninja -C out/Release-ios-arm64
+ls -l ~/deps/skia/third_party/libwebp/src/webp/decode.h
+rm -rf third_party/libwebp
+python3 tools/git-sync-deps
+rm -rf out/Release-ios-arm64
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  extra_cflags = ["-fembed-bitcode"]\
+\
+  # JPEG flags\
+  skia_use_system_libjpeg_turbo = false\
+  skia_use_libjpeg_turbo_decode = true\
+  skia_use_libjpeg_turbo_encode = true\
+\
+  # HarfBuzz flags\
+  skia_use_system_harfbuzz = false\
+  skia_use_harfbuzz = true\
+  skia_pdf_subset_harfbuzz = true\
+\
+  # PNG flags\
+  skia_use_system_libpng = false\
+  skia_use_libpng_decode = true\
+  skia_use_libpng_encode = true\
+\
+  # WebP flags\
+  skia_use_system_webp = false\
+  skia_use_webp_decode = true\
+  skia_use_webp_encode = true\
+\
+  # ICU flags\
+  skia_use_icu = true\
+  skia_use_system_icu = false\
+'
+git submodule sync --recursive
+git submodule update --init --recursive
+ls -l ~/deps/skia/third_party/libwebp/BUILD.gn
+rm -rf ~/deps/skia
+git clone -b aseprite-m124 https://github.com/aseprite/skia.git ~/deps/skia
+cd ~/deps/skia\
+git submodule update --init --recursive
+gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  extra_cflags = ["-fembed-bitcode"]\
+  skia_use_system_libjpeg_turbo = false\
+  skia_use_libjpeg_turbo_decode = true\
+  skia_use_libjpeg_turbo_encode = true\
+  skia_use_system_harfbuzz = false\
+  skia_use_harfbuzz = true\
+  skia_pdf_subset_harfbuzz = true\
+  skia_use_system_libpng = false\
+  skia_use_libpng_decode = true\
+  skia_use_libpng_encode = true\
+  skia_use_system_webp = false\
+  skia_use_webp_decode = true\
+  skia_use_webp_encode = true\
+  skia_use_icu = true\
+  skia_use_system_icu = false\
+'
+cd ~/deps/skia
+bin/gn gen out/Release-ios-arm64 --args='\
+  target_os = "ios"\
+  target_cpu = "arm64"\
+  ios_use_simulator = false\
+  is_official_build = true\
+  skia_use_metal = true\
+  extra_cflags = ["-fembed-bitcode"]\
+  skia_use_system_libjpeg_turbo = false\
+  skia_use_libjpeg_turbo_decode = true\
+  skia_use_libjpeg_turbo_encode = true\
+  skia_use_system_harfbuzz = false\
+  skia_use_harfbuzz = true\
+  skia_pdf_subset_harfbuzz = true\
+  skia_use_system_libpng = false\
+  skia_use_libpng_decode = true\
+  skia_use_libpng_encode = true\
+  skia_use_system_webp = false\
+  skia_use_webp_decode = true\
+  skia_use_webp_encode = true\
+  skia_use_icu = true\
+  skia_use_system_icu = false\
+'
+brew install cmake
+rm -rf skia
+code README.md
+open "/Applications/Python 3.13/Install Certificates.command"
+brew install python3
+sudo chown -R $(whoami) $(brew --prefix)/*
+# Install/update the certificate bundle using your Homebrew Python's pip\
+/opt/homebrew/opt/python@3.13/bin/pip3 install --upgrade certifi\
+\
+# Set the environment variables for this terminal session\
+export SSL_CERT_FILE=$(/opt/homebrew/opt/python@3.13/bin/python3.13 -m certifi)\
+export REQUESTS_CA_BUNDLE=$SSL_CERT_FILE
+brew reinstall python3
+/opt/homebrew/opt/python@3.13/bin/pip3 install --upgrade certifi
+/opt/homebrew/opt/python@3.13/bin/pip3 install --upgrade certifi --break-system-packages
+export REQUESTS_CA_BUNDLE=$SSL_CERT_FILE
+cd $HOME/deps/skia\
+python3 tools/git-sync-deps\
+python3 bin/fetch-ninja
+echo '\
+# Fix for Python SSL [SSL: CERTIFICATE_VERIFY_FAILED]\
+export SSL_CERT_FILE=$(/opt/homebrew/opt/python@3.13/bin/python3.13 -m certifi)\
+export REQUESTS_CA_BUNDLE=$SSL_CERT_FILE' >> ~/.zshrc
+rm -rf ~/.zshrc
+echo '\
+# Fix for Python SSL [SSL: CERTIFICATE_VERIFY_FAILED]\
+export SSL_CERT_FILE=$(/opt/homebrew/opt/python@3.13/bin/python3.13 -m certifi)\
+export REQUESTS_CA_BUNDLE=$SSL_CERT_FILE' >> ~/.config/zsh/.zshrc
+source $ZDOTDIR/.zshrc
+cat $ZDOTDIR/.zshrc
+mkdir $HOME/deps\
+cd $HOME/deps\
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git\
+git clone -b aseprite-m124 https://github.com/aseprite/skia.git\
+export PATH="${PWD}/depot_tools:${PATH}"\
+cd skia\
+python3 tools/git-sync-deps\
+python3 bin/fetch-ninja
+gn gen out/Release-arm64 --args="is_debug=false is_official_build=true skia_use_system_expat=false skia_use_system_icu=false skia_use_system_libjpeg_turbo=false skia_use_system_libpng=false skia_use_system_libwebp=false skia_use_system_zlib=false skia_use_freetype=true skia_use_harfbuzz=true skia_pdf_subset_harfbuzz=true skia_use_system_freetype2=false skia_use_system_harfbuzz=false target_cpu=\"arm64\" extra_cflags=[\"-stdlib=libc++\", \"-mmacosx-version-min=11.0\"] extra_cflags_cc=[\"-frtti\"]"\
+ninja -C out/Release-arm64 skia modules
+ls -a
+mkdir build
+cd build
+ cmake -G Ninja -DLAF_BACKEND=skia ..\
+
+cd build\
+cmake \\
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo \\
+  -DCMAKE_OSX_ARCHITECTURES=x86_64 \\
+  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9 \\
+  -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk \\
+  -DLAF_BACKEND=skia \\
+  -DSKIA_DIR=$HOME/deps/skia \\
+  -DSKIA_LIBRARY_DIR=$HOME/deps/skia/out/Release-x64 \\
+  -DSKIA_LIBRARY=$HOME/deps/skia/out/Release-x64/libskia.a \\
+  -G Ninja \\
+  ..\
+ninja aseprite
+cd aseprite\
+mkdir build\
+cd build\
+cmake \\
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo \\
+  -DCMAKE_OSX_ARCHITECTURES=x86_64 \\
+  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9 \\
+  -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk \\
+  -DLAF_BACKEND=skia \\
+  -DSKIA_DIR=$HOME/deps/skia \\
+  -DSKIA_LIBRARY_DIR=$HOME/deps/skia/out/Release-x64 \\
+  -DSKIA_LIBRARY=$HOME/deps/skia/out/Release-x64/libskia.a \\
+  -G Ninja \\
+  ..\
+ninja aseprite
+rm -rf build
+rm -rf aseprite
+git clone --recursive https://github.com/aseprite/aseprite.git
+cd aseprite\
+git pull\
+git submodule update --init --recursive
+cd aseprite\
+mkdir build\
+cd build\
+cmake \\
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo \\
+  -DCMAKE_OSX_ARCHITECTURES=arm64 \\
+  -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 \\
+  -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk \\
+  -DLAF_BACKEND=skia \\
+  -DSKIA_DIR=$HOME/deps/skia \\
+  -DSKIA_LIBRARY_DIR=$HOME/deps/skia/out/Release-arm64 \\
+  -DSKIA_LIBRARY=$HOME/deps/skia/out/Release-arm64/libskia.a \\
+  -DPNG_ARM_NEON:STRING=on \\
+  -G Ninja \\
+  ..\
+ninja aseprite
+ninja 
+ninja aseprite
+cd bin
+ls
+./aseprite
+killall aseprite
+pwd
+rm -rf .
+cd ..
+rm -rf calarme
+gexit
+bun dev
+nvm -v
+node -v
+brew install nvm
+code ~/.config/zsh/.zshrc
+. ~/.config/zsh/.zshrc
+nvm install
+node
+node .
+brew install
+bun install
+bun init
+bun .
+rm -R /Library/Audio/Plug-Ins/HAL/BlackHoleXch.driver
+sudo killall -9 coreaudiod
+brew update ghostty
+brew upgrade ghostty --cast
+brew upgrade ghostty --cask
+brew upgrade ghostty
+brew install ghostty

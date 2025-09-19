@@ -1,0 +1,4 @@
+list=( ${(Q)"${(z)$(<<\EO:list
+'find-appcast' 'font-casker'
+EO:list
+)}"} )
