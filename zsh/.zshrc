@@ -25,5 +25,5 @@ elif [[ $(uname -n) == "nixos" ]]; then
 	source $ZDOTDIR/nixos.zsh
 fi
 
-# Misc
+# Start
 uwufetch -wr  # display and reads cached info add -i to use images

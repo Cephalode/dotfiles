@@ -1,26 +1,27 @@
 -- Options
 vim.o.number = true
 vim.o.relativenumber = true
-vim.o.tabstop = 2
-vim.o.shiftwidth = 2
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 vim.o.ignorecase = true
 vim.o.wrap = false
 vim.o.smartindent = true
 vim.o.swapfile = false
 vim.o.undofile = true
 vim.o.termguicolors = true
-vim.o.winborder = "rounded" -- For CTRL+X commands in insert mode
+vim.o.winborder = "rounded"
 vim.o.incsearch = true
 vim.o.signcolumn = "yes"
 
 
 -- Plugins
 vim.pack.add({
-	{ src = "https://github.com/EdenEast/nightfox.nvim" },  -- theme
-	{ src = "https://github.com/stevearc/oil.nvim" },       -- file explorer
-	{ src = "https://github.com/echasnovski/mini.pick" },   -- pop-up selector
-	{ src = "https://github.com/mason-org/mason.nvim" },    -- lsp manager
-	{ src = "https://github.com/ThePrimeagen/vim-be-good" }, -- vim practice
+	{ src = "https://github.com/EdenEast/nightfox.nvim" },       -- theme
+	{ src = "https://github.com/stevearc/oil.nvim" },            -- file explorer
+	{ src = "https://github.com/echasnovski/mini.pick" },        -- pop-up selector
+	{ src = "https://github.com/mason-org/mason.nvim" },         -- lsp manager
+	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" }, -- lsp manager
+	{ src = "https://github.com/ThePrimeagen/vim-be-good" },     -- vim practice
 })
 require "mini.pick".setup()
 require "oil".setup()
@@ -28,16 +29,22 @@ require "oil".setup()
 
 -- LSP
 local lsp_servers = {
-	'lua_ls',
-	'tsserver',
-	'pyright',
-	'html',
-	'cssls',
+	"lua_ls",
+	"tsserver",
+	"pyright",
+	"html",
+	"cssls",
 }
+require "nvim-treesitter.configs".setup({
+	ensure_installed = { "lua", "typescript", "javascript" },
+	highlight = { enable = true },
+})
 require "mason".setup({
 	ensure_installed = lsp_servers,
 })
 vim.lsp.enable(lsp_servers)
+
+-- autocompletion
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = vim.api.nvim_create_augroup('my.lsp', {}),
 	callback = function(args)
