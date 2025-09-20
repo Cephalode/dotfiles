@@ -1,3 +1,4 @@
+-- Options
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.tabstop = 2
@@ -12,29 +13,31 @@ vim.o.winborder = "rounded" -- For CTRL+X commands in insert mode
 vim.o.incsearch = true
 vim.o.signcolumn = "yes"
 
-local map = vim.keymap.set -- shorten mapping command
 
-vim.g.mapleader = " "
-map('n', '<leader>o', ':update<CR>: source<CR>')
-map('n', '<leader>w', ':write<CR>')
-map('n', '<leader>q', ':quit<CR>')
-
-map({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>') -- copy to clipboard
-map({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>') -- cut to clipboard
-
+-- Plugins
 vim.pack.add({
-	{ src = "https://github.com/EdenEast/nightfox.nvim" }, 		-- theme
-	{ src = "https://github.com/stevearc/oil.nvim" },					-- file explorer
-	{ src = "https://github.com/echasnovski/mini.pick" },			-- pop-up selector
-	{ src = "https://github.com/mason-org/mason.nvim" },			-- lsp manager
-	{ src = "https://github.com/ThePrimeagen/vim-be-good" },	-- vim practice
+	{ src = "https://github.com/EdenEast/nightfox.nvim" },  -- theme
+	{ src = "https://github.com/stevearc/oil.nvim" },       -- file explorer
+	{ src = "https://github.com/echasnovski/mini.pick" },   -- pop-up selector
+	{ src = "https://github.com/mason-org/mason.nvim" },    -- lsp manager
+	{ src = "https://github.com/ThePrimeagen/vim-be-good" }, -- vim practice
 })
-
-require "mason".setup()
 require "mini.pick".setup()
 require "oil".setup()
 
--- Autocomplete (I think)
+
+-- LSP
+local lsp_servers = {
+	'lua_ls',
+	'tsserver',
+	'pyright',
+	'html',
+	'cssls',
+}
+require "mason".setup({
+	ensure_installed = lsp_servers,
+})
+vim.lsp.enable(lsp_servers)
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = vim.api.nvim_create_augroup('my.lsp', {}),
 	callback = function(args)
@@ -49,14 +52,27 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 vim.cmd("set completeopt+=noselect")
 
-map('n', '<leader>f', ":Pick files<CR>")
-map('n', '<leader>h', ":Pick help<CR>")
-map('n', '<leader>e', ":Oil<CR>")
-map('n', '<leader>lf', vim.lsp.buf.format)
 
-vim.lsp.enable({ "lua_ls" })
+-- Keymaps
+vim.g.mapleader = " "                      -- Set leader key
 
--- colors 
+local map = vim.keymap.set                 -- shorten mapping command
+map('n', '<leader>lf', vim.lsp.buf.format) -- autoformat
+
+map('n', '<leader>f', ":Pick files<CR>")   -- File tree picker
+map('n', '<leader>h', ":Pick help<CR>")    -- Help manuals
+map('n', '<leader>e', ":Oil<CR>")          -- File explorer
+map('n', '<leader>s', ":e #<CR>")          -- Open last file
+map('n', '<leader>S', ":sf #<CR>")         -- Open last file horizontally
+
+map('n', '<leader>o', ':update<CR>: source<CR>')
+map('n', '<leader>w', ':write<CR>')
+map('n', '<leader>q', ':quit<CR>')
+map({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>') -- copy to clipboard
+map({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>') -- cut to clipboard
+
+
+-- colors
 require('nightfox').setup({
 	options = {
 		transparent = true,
