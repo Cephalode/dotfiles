@@ -18,7 +18,9 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
 alias la='ls -alh'
+alias ls='ls -a'
 alias dush='du -sh * | sort -hr'
+alias wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
 
 # Editors
 alias vim='nvim'
@@ -30,8 +32,11 @@ alias hist='history | grep'
 alias inst='yay -S'
 alias update='yay -Syu'
 alias rem='yay -Rns'
-alias srczsh='source $XDG_CONFIG_HOME/zsh/*'
+alias srczsh='source $XDG_CONFIG_HOME/zsh/.zshrc; source $XDG_CONFIG_HOME/zsh/.zshenv'
 alias fetch='uwufetch'
 
 # Mac commands
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+
+# Other apps
+alias adb='HOME="$XDG_DATA_HOME"/android adb' # adds xdg path

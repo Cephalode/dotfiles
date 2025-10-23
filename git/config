@@ -1,3 +1,5 @@
 [user]
-	email = git@nasifmauthoor.com
-	name = Nasif Mauthoor
+	email = git@cephalode.com
+	name = Cephalode
+[hub]
+	protocol = ssh
