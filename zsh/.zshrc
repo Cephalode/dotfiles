@@ -10,6 +10,7 @@ export PATH
 
 # ZSH setup
 #compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+source $ZDOTDIR/.zshenv
 source $ZDOTDIR/aliases
 
 # bun completions

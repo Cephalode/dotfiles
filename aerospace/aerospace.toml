@@ -92,7 +92,7 @@ alt-ctrl-cmd-shift-s = ['move-node-to-workspace secondary', 'workspace secondary
 alt-ctrl-cmd-shift-v = ['move-node-to-workspace vtubing', 'workspace vtubing']
 
 # alt-ctrl-cmd-shift-tab = 'move-workspace-to-monitor --wrap-around next'
-alt-ctrl-cmd-f = ['close-all-windows-but-current', 'fullscreen --no-outer-gaps']
+alt-ctrl-cmd-shift-f = ['close-all-windows-but-current', 'fullscreen --no-outer-gaps']
 
 alt-ctrl-cmd-shift-semicolon = 'mode service'
 [mode.service.binding]
