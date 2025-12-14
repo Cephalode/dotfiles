@@ -16,8 +16,7 @@
     "j3lte",
     "alexandercato",
     "ViGeng",
-    "ridemountainpig",
-    "chrismessina"
+    "ridemountainpig"
   ],
   "license": "MIT",
   "icon": "icon.png",
@@ -147,20 +146,22 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.103.6",
+    "@raycast/api": "^1.88.4",
     "@raycast/utils": "^1.18.1",
     "@types/stream-json": "^1.7.8",
+    "node-fetch": "^3.3.2",
     "stream-chain": "^2.2.5",
     "stream-json": "^1.9.1"
   },
   "devDependencies": {
-    "@raycast/eslint-config": "^2.1.1",
+    "@raycast/eslint-config": "^1.0.11",
     "@types/node": "^22.10.2",
-    "@types/react": "^19.0.10",
-    "eslint": "^9.39.1",
+    "@types/node-fetch": "^2.6.12",
+    "@types/react": "^18.3.18",
+    "eslint": "^8.57.1",
     "prettier": "^3.4.2",
-    "react": "^19.0.10",
-    "typescript": "^5.9.3"
+    "react": "^19.0.0",
+    "typescript": "^5.7.2"
   },
   "scripts": {
     "build": "ray build -e dist",
