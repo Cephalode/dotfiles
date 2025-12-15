@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "lush.nvim": {
+      "rev": "9c60ec2279d62487d942ce095e49006af28eed6e",
+      "src": "https://github.com/rktjmp/lush.nvim"
+    },
     "mason-lspconfig.nvim": {
       "rev": "c55bd8a8fb191e24176c206a7af1dd51ce7276a5",
       "src": "https://github.com/mason-org/mason-lspconfig.nvim"
@@ -31,6 +35,10 @@
     "oil.nvim": {
       "rev": "cbcb3f997f6f261c577b943ec94e4ef55108dd95",
       "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "pywal16.nvim": {
+      "rev": "b21a36cfcbe4581176b79fe46b88ae42ae0fe520",
+      "src": "https://github.com/uZer/pywal16.nvim"
     },
     "vim-be-good": {
       "rev": "0ae3de14eb8efc6effe7704b5e46495e91931cc5",
