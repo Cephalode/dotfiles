@@ -1,5 +1,3 @@
--- options
---------------------------------------------------------------------------------
 -- Relative and absolute line numbers combined
 vim.opt.number = true
 vim.opt.relativenumber = true
