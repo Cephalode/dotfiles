@@ -1,0 +1,64 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "6bb6b7ffed1884af2ff3c197c2a86c5ae8685c4f637174a8b14287bc67d7f66d",
+    "telemetry.macMachineId": "23567dc7efea11cedaefebcfc1d29dc530e7fd2d6134846b35299090fb66ffae",
+    "telemetry.devDeviceId": "3b18b125-de56-47cc-8b0b-805a3147779c",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1765894264637"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {},
+        "emptyWindows": {
+            "1765894264637": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#181818",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "rgba(228, 228, 228, 0.92)",
+            "background": "#181818",
+            "editorBackground": "#181818",
+            "titleBarBackground": "#141414",
+            "titleBarBorder": "rgba(228, 228, 228, 0.07)",
+            "activityBarBackground": "#141414",
+            "sideBarBackground": "#141414",
+            "sideBarBorder": "rgba(228, 228, 228, 0.07)",
+            "statusBarBackground": "#141414",
+            "statusBarBorder": "rgba(228, 228, 228, 0.07)",
+            "statusBarNoFolderBackground": "#141414"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 0,
+            "sideBarWidth": 191,
+            "auxiliarySideBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/sqibo/.config/Cursor/Backups/1765894264637",
+            "uiState": {
+                "mode": 1,
+                "x": 0,
+                "y": 0,
+                "width": 762,
+                "height": 826
+            }
+        },
+        "openedWindows": []
+    }
+}
