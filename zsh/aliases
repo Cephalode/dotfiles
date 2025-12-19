@@ -1,23 +1,9 @@
 #!/usr/bin/env bash
 
-# systemctl commands
-alias shutdown='systemctl shutdown'
-alias reboot='systemctl reboot'
-alias sleep='systemctl suspend'
-
-alias jarvis='sudo' # Funny sudo alias
-
-# Git
-alias ga='git add'
-alias gc='git commit'
-alias gp='git push'
-alias gs='git status'
-
 # File commands
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
-alias la='ls -alh'
 alias ls='ls -a'
 alias dush='du -sh * | sort -hr'
 alias wget='wget --hsts-file=$XDG_DATA_HOME/wget-hsts'
