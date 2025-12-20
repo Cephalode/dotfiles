@@ -24,3 +24,8 @@ alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 # Other apps
 alias adb='HOME="$XDG_DATA_HOME"/android adb' # adds xdg path
+
+# TMUX
+alias tn='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias ta='tmux attach-session'
