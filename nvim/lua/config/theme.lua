@@ -1,1 +1,1 @@
-vim.cmd("colorscheme zaibatsu")
+vim.cmd.colorscheme("default")
