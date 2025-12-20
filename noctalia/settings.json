@@ -451,7 +451,7 @@
     },
     "templates": {
         "alacritty": true,
-        "cava": false,
+        "cava": true,
         "code": false,
         "discord": false,
         "emacs": false,
