@@ -47,3 +47,7 @@ vim.opt.undofile = true
 
 -- Set the default border for all floating windows
 vim.opt.winborder = 'rounded'
+
+-- Theme
+vim.opt.termguicolors = false
+vim.opt.background = "dark"
