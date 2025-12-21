@@ -28,3 +28,7 @@ fi
 
 # Start
 uwufetch -wr  # display and reads cached info add -i to use images
+
+# Prompt
+PROMPT='%f%K{cyan}%F{black} %~ %f%k%F{cyan}%f '
+RPROMPT=' %F{blue}%K{blue}%F{black} %n@%m %f%k%F{blue}'
