@@ -1,0 +1,8 @@
+{
+    "discordBranch": "stable",
+    "tray": true,
+    "minimizeToTray": true,
+    "arRPC": true,
+    "trayColor": "",
+    "trayMainOverride": false
+}

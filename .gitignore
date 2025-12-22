@@ -1,5 +1,10 @@
 .DS_Store
 rclone
 gh/
+
 legcord/
 discord/
+equibop/Crashpad
+equibop/MessageLoggerData
+equibop/sessionData
+

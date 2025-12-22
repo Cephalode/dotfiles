@@ -7,7 +7,7 @@ alias rm='rm -iv'
 alias ls='ls -a'
 alias dush='du -sh * | sort -hr'
 alias wget='wget --hsts-file=$XDG_DATA_HOME/wget-hsts'
-alias tree='tree --dirs-first'
+alias tree='tree --dirsfirst'
 
 # Editors
 alias vim='nvim'

@@ -1,10 +1,6 @@
 input {
     keyboard {
         xkb {
-            // You can set rules, model, layout, variant and options.
-            // For more information, see xkeyboard-config(7).
-
-            // For example:
             // layout "us,ru"
             // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
 
@@ -300,11 +296,20 @@ window-rule {
     // block-out-from "screencast"
 }
 
-// Example: enable rounded corners for all windows.
-// (This example rule is commentalacrittyed out with a "/-" in front.)
-/-window-rule {
-    geometry-corner-radius 12
+// Noctalia Settings
+window-rule {
+    geometry-corner-radius 8
     clip-to-geometry true
+}
+// Notifications
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+// Add backdrop instead of boring grey
+layer-rule {
+  match namespace="^noctalia-overview"
+  place-within-backdrop true
 }
 
 binds {
@@ -326,6 +331,8 @@ binds {
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+
+    Mod+B hotkey-overlay-title="Open a Browser: Zen" { spawn "zen"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
