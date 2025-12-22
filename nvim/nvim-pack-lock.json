@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "cyberdream.nvim": {
+      "rev": "caf4f5e57f8d5e0bb75fe98f4f67965b1fb3326c",
+      "src": "https://github.com/scottmckendry/cyberdream.nvim"
+    },
     "lush.nvim": {
       "rev": "9c60ec2279d62487d942ce095e49006af28eed6e",
       "src": "https://github.com/rktjmp/lush.nvim"
@@ -39,6 +43,14 @@
     "pywal16.nvim": {
       "rev": "b21a36cfcbe4581176b79fe46b88ae42ae0fe520",
       "src": "https://github.com/uZer/pywal16.nvim"
+    },
+    "typst-preview.nvim": {
+      "rev": "1603d37bb44ed2efa0b4378d1dfedc087b4f2141",
+      "src": "https://github.com/chomosuke/typst-preview.nvim"
+    },
+    "vague.nvim": {
+      "rev": "e3d316dc1b84bc759b4cf31619595a9ed7b3ee19",
+      "src": "https://github.com/vague2k/vague.nvim"
     },
     "vim-be-good": {
       "rev": "0ae3de14eb8efc6effe7704b5e46495e91931cc5",

@@ -17,7 +17,7 @@
   defaultBranch = dev
 
 [commit]
-  template = /home/sqibo/.config/git/template
+  template = ~/.config/git/template
   verbose = true
 
 [status]

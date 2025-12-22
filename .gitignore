@@ -1,4 +1,4 @@
-.DS_Store
+*.DS_Store*
 rclone
 gh/
 
@@ -8,3 +8,4 @@ equibop/Crashpad
 equibop/MessageLoggerData
 equibop/sessionData
 
+zsh/.zcompdump
