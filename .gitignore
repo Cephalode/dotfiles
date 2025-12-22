@@ -1,5 +1,6 @@
-.DS_Store
+*.DS_Store*
 rclone
 gh/
 legcord/
 discord/
+zsh/.zcompdump
