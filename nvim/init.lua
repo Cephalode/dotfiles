@@ -4,6 +4,6 @@ require "config.keymap"
 require "config.lsp"
 require "config.options"
 require "config.theme"
+
 require "plugins.oil"
-require "plugins.theme"
 require "plugins.treesitter"
