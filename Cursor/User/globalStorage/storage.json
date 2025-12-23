@@ -1,0 +1,78 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "6bb6b7ffed1884af2ff3c197c2a86c5ae8685c4f637174a8b14287bc67d7f66d",
+    "telemetry.macMachineId": "23567dc7efea11cedaefebcfc1d29dc530e7fd2d6134846b35299090fb66ffae",
+    "telemetry.devDeviceId": "3b18b125-de56-47cc-8b0b-805a3147779c",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/sqibo/Dev/nix"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1766427524628"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/sqibo/Dev/nix": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1766427524628": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#002b36",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#002b36",
+            "editorBackground": "#002b36",
+            "titleBarBackground": "#002c39",
+            "activityBarBackground": "#003847",
+            "sideBarBackground": "#00212b",
+            "statusBarBackground": "#00212b",
+            "statusBarNoFolderBackground": "#00212b"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 0,
+            "sideBarWidth": 189,
+            "auxiliarySideBarWidth": 381,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/sqibo/Dev/nix",
+            "backupPath": "/home/sqibo/.config/Cursor/Backups/c847ff4bbac89c35863d044d78b09546",
+            "uiState": {
+                "mode": 1,
+                "x": 0,
+                "y": 0,
+                "width": 1523,
+                "height": 825
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "auxiliarySideBarWidth": [
+                381,
+                [
+                    "e481e2ac165466f4f128ab90aa41c9d8"
+                ]
+            ]
+        }
+    }
+}

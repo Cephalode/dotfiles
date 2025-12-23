@@ -267,7 +267,7 @@
     },
     "desktopWidgets": {
         "editMode": false,
-        "enabled": true,
+        "enabled": false,
         "gridSnap": false,
         "monitorWidgets": [
             {
