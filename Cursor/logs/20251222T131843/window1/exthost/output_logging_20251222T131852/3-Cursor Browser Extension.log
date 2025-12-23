@@ -1,0 +1,10 @@
+[2025-12-22T18:18:57.244Z] [INFO] [general] Activating Cursor Browser Extension MCP Provider
+[2025-12-22T18:18:57.245Z] [INFO] [general] Initializing Playwright Browser Tools
+[2025-12-22T18:18:57.308Z] [INFO] [general] Using configuration: {"connectionType":"default"}
+[2025-12-22T18:18:57.308Z] [INFO] [general] No workspace storage available, will use temporary storage
+[2025-12-22T18:18:57.309Z] [INFO] [general] Playwright Browser Tools initialized successfully
+[2025-12-22T18:18:57.309Z] [INFO] [general] Cursor Browser Extension MCP Provider initialized successfully
+[2025-12-22T18:18:57.309Z] [INFO] [general] Cursor Browser Extension MCP Provider registered successfully
+[2025-12-22T18:18:58.024Z] [INFO] [general] Listing available browser tools
+[2025-12-22T18:22:31.548Z] [INFO] [general] Deactivating Cursor Browser Extension MCP Provider
+[2025-12-22T18:22:31.608Z] [INFO] [general] Playwright MCP Provider disposed

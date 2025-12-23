@@ -188,7 +188,7 @@ layout {
         // window. These will also remove client-side shadows if the window
         // draws any.
         //
-        // draw-behind-window true
+        draw-behind-window true
 
         // You can change how shadows look. The values below are in logical
         // pixels and match the CSS box-shadow properties.
@@ -262,8 +262,6 @@ animations {
 }
 
 // Window rules let you adjust behavior for individual windows.
-// Find more information on the wiki:
-// https://yalter.github.io/niri/Configuration:-Window-Rules
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
@@ -298,8 +296,11 @@ window-rule {
 
 // Noctalia Settings
 window-rule {
-    geometry-corner-radius 8
-    clip-to-geometry true
+  match app-id=".*"
+  opacity 0.9
+  geometry-corner-radius 8
+  clip-to-geometry true
+  draw-border-with-background false
 }
 // Notifications
 debug {
