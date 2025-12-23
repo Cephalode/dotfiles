@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Equibop
+Comment=Equibop autostart script
+Exec="/nix/store/wzvbll6v8b8g6nrk20gs70mxxywr93xi-electron-unwrapped-38.7.1/libexec/electron/electron" "/nix/store/d0sc1f3302ldgd5gb055nl0m0g7y0w4j-equibop-2.1.7/opt/Equibop/resources/app.asar" "--enable-speech-dispatcher" "--ozone-platform-hint=auto" "--enable-features=WaylandWindowDecorations" "--enable-wayland-ime=true"
+StartupNotify=false
+Terminal=false
+Icon=vesktop

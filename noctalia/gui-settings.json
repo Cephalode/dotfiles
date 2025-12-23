@@ -57,7 +57,7 @@
                     "hideMode": "alwaysExpanded",
                     "icon": "rocket",
                     "id": "CustomButton",
-                    "leftClickExec": "qs -c noctalia-shell ipc call launcher toggle",
+                    "leftClickExec": "noctalia-shell",
                     "leftClickUpdateText": false,
                     "maxTextLength": {
                         "horizontal": 10,
@@ -267,9 +267,38 @@
     },
     "desktopWidgets": {
         "editMode": false,
-        "enabled": false,
+        "enabled": true,
         "gridSnap": false,
         "monitorWidgets": [
+            {
+                "name": "eDP-1",
+                "widgets": [
+                    {
+                        "clockStyle": "digital",
+                        "format": "HH:mm\\nd MMMM yyyy",
+                        "id": "Clock",
+                        "showBackground": true,
+                        "useCustomFont": false,
+                        "usePrimaryColor": false,
+                        "x": 50,
+                        "y": 50
+                    },
+                    {
+                        "hideMode": "visible",
+                        "id": "MediaPlayer",
+                        "showBackground": true,
+                        "visualizerType": "linear",
+                        "x": 100,
+                        "y": 200
+                    },
+                    {
+                        "id": "Weather",
+                        "showBackground": true,
+                        "x": 100,
+                        "y": 300
+                    }
+                ]
+            }
         ]
     },
     "dock": {
@@ -328,7 +357,7 @@
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
-        "use12hourFormat": false,
+        "use12hourFormat": true,
         "useFahrenheit": false,
         "weatherEnabled": true,
         "weatherShowEffects": true
@@ -455,7 +484,7 @@
         "memPollingInterval": 3000,
         "memWarningThreshold": 80,
         "networkPollingInterval": 3000,
-        "tempCriticalThreshold": 90,
+        "tempCriticalThreshold": 100,
         "tempPollingInterval": 3000,
         "tempWarningThreshold": 80,
         "useCustomColors": false,
@@ -465,7 +494,7 @@
         "alacritty": true,
         "cava": true,
         "code": false,
-        "discord": false,
+        "discord": true,
         "emacs": false,
         "enableUserTemplates": false,
         "foot": false,
@@ -493,7 +522,7 @@
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.85,
         "panelsAttachedToBar": true,
-        "settingsPanelMode": "attached",
+        "settingsPanelMode": "centered",
         "tooltipsEnabled": true
     },
     "wallpaper": {
