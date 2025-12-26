@@ -9,3 +9,5 @@ equibop/MessageLoggerData
 equibop/sessionData
 
 zsh/.zcompdump
+
+.DS_Store
