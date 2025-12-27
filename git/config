@@ -66,10 +66,10 @@
   sort = -taggerdate
 
 [url "git@github.com:Cephalode/"]
-  insteadOf = "me"
+  insteadOf = "me:"
 
 [url "git@github.com:datainn/"]
-  insteadOf = "work"
+  insteadOf = "work:"
 
 [url "git@github.com:"]
   insteadOf = "gh:"
