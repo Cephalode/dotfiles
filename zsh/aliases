@@ -11,8 +11,6 @@ alias tree='tree --dirsfirst'
 alias cat='bat'
 
 # Editors
-alias vim='nvim'
-alias vi='nvim'
 alias svim='sudoedit'
 
 # Command shortcuts
