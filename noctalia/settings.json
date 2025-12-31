@@ -322,29 +322,29 @@
         "pinnedApps": [
         ],
         "pinnedStatic": false,
-        "size": 0
+        "size": 2
     },
     "general": {
         "allowPanelsOnScreenWithoutBar": true,
         "animationDisabled": false,
         "animationSpeed": 1,
-        "avatarImage": "/home/sqibo/.face",
+        "avatarImage": "/home/sqibo/.config/noctalia/Pictures/.face",
         "boxRadiusRatio": 1,
         "compactLockScreen": true,
         "dimmerOpacity": 0.2,
         "enableShadows": true,
-        "forceBlackScreenCorners": false,
+        "forceBlackScreenCorners": true,
         "iRadiusRatio": 1,
         "language": "",
         "lockOnSuspend": true,
         "radiusRatio": 1,
         "scaleRatio": 1,
         "screenRadiusRatio": 1,
-        "shadowDirection": "bottom_right",
-        "shadowOffsetX": 2,
-        "shadowOffsetY": 3,
+        "shadowDirection": "bottom_left",
+        "shadowOffsetX": -2,
+        "shadowOffsetY": 2,
         "showHibernateOnLockScreen": true,
-        "showScreenCorners": false,
+        "showScreenCorners": true,
         "showSessionButtonsOnLockScreen": true
     },
     "hooks": {
@@ -545,7 +545,7 @@
         "wifiDetailsViewMode": "grid"
     },
     "wallpaper": {
-        "directory": "/home/sqibo/.config/noctalia/Wallpapers",
+        "directory": "/home/sqibo/.config/noctalia/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "fillColor": "#000000",
