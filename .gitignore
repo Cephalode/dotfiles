@@ -1,6 +1,7 @@
 *.DS_Store*
 rclone
 gh/
+Cursor/
 
 legcord/
 discord/
