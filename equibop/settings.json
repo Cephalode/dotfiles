@@ -4,5 +4,6 @@
     "minimizeToTray": true,
     "arRPC": true,
     "trayColor": "",
-    "trayMainOverride": false
+    "trayMainOverride": false,
+    "splashColor": "rgb(180, 202, 214)"
 }
