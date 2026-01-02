@@ -27,7 +27,7 @@
     "bar": {
         "backgroundOpacity": 0,
         "capsuleOpacity": 0.3,
-        "density": "compact",
+        "density": "comfortable",
         "exclusive": true,
         "floating": false,
         "marginHorizontal": 0.25,
@@ -86,10 +86,10 @@
                 },
                 {
                     "customFont": "",
-                    "formatHorizontal": "HH:mm ddd, MMM dd",
-                    "formatVertical": "HH mm - dd MM",
+                    "formatHorizontal": "h:mm AP ddd, MMM dd",
+                    "formatVertical": "h mm AP - dd MM",
                     "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd, MMM dd",
+                    "tooltipFormat": "h:mm AP ddd, MMM dd",
                     "useCustomFont": false,
                     "usePrimaryColor": false
                 },
