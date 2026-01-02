@@ -340,7 +340,7 @@ debug {
 }
 // Add backdrop instead of boring grey
 layer-rule {
-  match namespace="^noctalia-overview"
+  match namespace="^noctalia-overview*"
   place-within-backdrop true
 }
 
