@@ -12,11 +12,11 @@
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
         "useApp2Unit": false,
-        "viewMode": "list"
+        "viewMode": "grid"
     },
     "audio": {
         "cavaFrameRate": 30,
-        "externalMixer": "pwvucontrol || pavucontrol",
+        "externalMixer": "pwvucontrol",
         "mprisBlacklist": [
         ],
         "preferredPlayer": "",
