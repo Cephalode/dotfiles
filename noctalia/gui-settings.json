@@ -12,7 +12,7 @@
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
         "useApp2Unit": false,
-        "viewMode": "grid"
+        "viewMode": "list"
     },
     "audio": {
         "cavaFrameRate": 30,
