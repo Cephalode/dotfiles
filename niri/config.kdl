@@ -56,7 +56,6 @@ output "DP-1" {
     position x=0 y=0
 }
 
-
 layout {
     gaps 10
     center-focused-column "never"
@@ -114,8 +113,19 @@ animations {
 // Browser floating PiP
 window-rule {
     match title="^Picture-in-Picture$"
-    match title="^moz-extension" // Currently does not work
+    // match title="^moz-extension" // Currently does not work
     open-floating true
+}
+
+// Games Workspace
+window-rule {
+  match app-id="^steam"
+  match app-id="^discord$"
+  open-on-workspace "game"
+}
+window-rule {
+  match app-id="^steam-"
+  open-fullscreen true
 }
 
 // Opacity of all windows
@@ -140,6 +150,8 @@ layer-rule {
 }
 
 binds {
+    // Workspaces
+
     // "Mod" is a special modifier equal to Super when running on a TTY, and to Alt
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
@@ -150,17 +162,12 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen: Noctalia Lock" { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
 
     Mod+B hotkey-overlay-title="Open a Browser: Zen" { spawn "zen"; }
-    // Example volume keys mappings for PipeWire & WirePlumber.
-    // The allow-when-locked=true property makes them work even when the session is locked.
-    // Using spawn-sh allows to pass multiple arguments together with the command.
+
+    // Function key mods
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
-
-    // Example brightness key mappings for brightnessctl.
-    // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
-    // but you need to manually put each argument in separate "" quotes.
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
