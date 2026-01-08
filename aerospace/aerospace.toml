@@ -49,8 +49,8 @@ alt-ctrl-cmd-shift-k = ['join-with up', 'mode main']
 alt-ctrl-cmd-shift-l = ['join-with right', 'mode main']
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-alt-ctrl-cmd-shift-minus = 'resize smart -50'
-alt-ctrl-cmd-shift-equal = 'resize smart +50'
+alt-ctrl-cmd-minus = 'resize smart -50'
+alt-ctrl-cmd-equal = 'resize smart +50'
 
 # workspace
 alt-ctrl-cmd-b = 'workspace browser'
