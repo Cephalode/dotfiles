@@ -2,7 +2,6 @@
 rclone
 gh/
 Cursor/
-BambuStudio/
 
 legcord/
 discord/
@@ -13,3 +12,7 @@ equibop/sessionData
 zsh/.zcompdump
 
 heroic/
+
+# Bambu Studio
+BambuStudio/cache
+BambuStudio/log
