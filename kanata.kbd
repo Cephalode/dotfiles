@@ -1,26 +1,39 @@
-(defcfg
-  process-unmapped-keys yes
-)
-
 (defsrc
-  caps grv         i
-              j    k    l
-  lsft rsft
+  esc   f1    f2    f3    f4    f5    f6    f7    f8    f9    f10   f11   f12         prt   scr   pau
+  grv   1     2     3     4     5     6     7     8     9     0     -     =     bsp   ins   hom   pgu
+  tab   q     w     e     r     t     y     u     i     o     p     [     ]     \     del   end   pgd
+  caps  a     s     d     f     g     h     j     k     l     ;     '           ret
+  lsf   z     x     c     v     b     n     m     ,     .     /                 rsf         up
+  lct   lal   lme               spc                           lme   fn    sel   rct   lft   dwn   rgh
+(deflayer main
+  @hyc @aC  @sA  @dS  @fM  @jM  @kS  @lA  @;C  @hyr @lay
 )
-
-(deflayer default
-  @cap @grv        _
-              _    _    _
-  _    _
+(deflayer base
+  esc   f1    f2    f3    f4    f5    f6    f7    f8    f9    f10   f11   f12         prt   scr   pau
+  grv   1     2     3     4     5     6     7     8     9     0     -     =     bsp   ins   hom   pgu
+  tab   q     w     e     r     t     y     u     i     o     p     [     ]     \     del   end   pgd
+  caps  a     s     d     f     g     h     j     k     l     ;     '           ret
+  lsf   z     x     c     v     b     n     m     ,     .     /                 rsf         up
+  lct   lal   lme               spc                           lme   fn    sel   rct   lft   dwn   rgh
 )
-
-(deflayer arrows
-  _    _           up
-              left down rght
-  _    _
+(deflayer switch
+  @l1  @l2
+  _    _    _    _    _    _    _    _    _    _    _
 )
-
 (defalias
-  cap (tap-hold-press 200 200 esc (multi lctl lmet lalt))
-  grv (tap-hold-press 200 200 grv (layer-toggle arrows))
+  hyc (tap-hold-press 200 200 esc (multi lctl lalt lmet))
+  hyr (tap-hold-press 200 200 ret (multi lctl lalt lmet))
+  ;C  (tap-hold       200 200 ;   rctl)
+  lA  (tap-hold       200 200 l   ralt)
+  kS  (tap-hold       200 200 k   rsft)
+  jM  (tap-hold       200 200 j   rmet)
+  aC  (tap-hold       200 200 a   lctl)
+  sA  (tap-hold       200 200 s   lalt)
+  dS  (tap-hold       200 200 d   lsft)
+  fM  (tap-hold       200 200 f   lmet)
+
+  lay (layer-while-held switch)
+  l1  (layer-switch main)
+  l2  (layer-switch base)
 )
+
