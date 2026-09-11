@@ -5,34 +5,34 @@ GNU Stow-managed config files for both macOS (Metasepia) and NixOS (Loligo).
 ## Install
 
 ```bash
-cd ~/devel/dotfiles
+cd ~/dev/dotfiles
 ./setup.sh
 ```
 
 Or manually:
 ```bash
-stow --target="$HOME" nvim git kitty btop cava fuzzel niri kanata keyd gtk-3 gtk-4
+stow --target="$HOME" zshrc ghostty gtk-3 gtk-4 kanata keyd  # etc, see setup.sh
 ```
 
 ## Structure
 
 Each package lives in its own directory with the structure that should appear in `~/.config/`:
 
-- `nvim/` — Neovim config
-- `git/` — Git config, ignore, and templates
-- `kitty/` — Terminal emulator
-- `niri/` — NixOS window manager (Loligo-specific)
-- `btop/`, `cava/`, `fuzzel/` — Tools and themes
+- `zshrc/` — Zsh config (`~/.config/zsh`)
+- `alacritty/`, `ghostty/`, `zellij/` — Terminals and multiplexer
 - `kanata/`, `keyd/` — Keyboard configuration
-- `gtk-3/`, `gtk-4/` — GTK theming
-- (Plus macOS-specific packages: aerospace, karabiner, hammerspoon, etc.)
+- `gtk-3/`, `gtk-4/`, `qt5ct/`, `qt6ct/`, `kdeglobals/`, `dconf/`, `noctalia/` — Theming
+- `nix/`, `ssh/` — Misc
+- macOS only: `aerospace/`, `hammerspoon/`, `skhd/`, `sketchybar/`, `kindavim/`
+- `karabiner/` is kept for reference but not stowed; the nix module owns the live file
+- git, kitty, cava, fuzzel, atuin, niri moved to nix wrapper modules
 
 ## Update a package
 
 ```bash
-# Edit files in ~/.config/nvim (or wherever)
-# Changes are automatically reflected in ~/devel/dotfiles/nvim/.config/nvim/
-cd ~/devel/dotfiles
+# Edit files in ~/.config/zsh (or wherever)
+# Changes are automatically reflected in ~/dev/dotfiles/zshrc/.config/zsh/
+cd ~/dev/dotfiles
 git add .
-git commit -m "Update nvim"
+git commit -m "Update zsh"
 ```

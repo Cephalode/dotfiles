@@ -48,6 +48,14 @@ if [[ "$(uname)" == "Darwin" ]] && [[ -z "$BW_SESSION" ]]; then
   export BW_SESSION="$(security find-generic-password -a "$USER" -s "BW_SESSION" -w 2>/dev/null)"
 fi
 
+# aac with vault unlockable without typing the master password
+# (aac's Bitwarden provider runs `bw unlock --passwordenv BW_MASTER_PASSWORD`)
+aac() {
+  local mp
+  mp="$(security find-generic-password -a "$USER" -s "BW_MASTER" -w 2>/dev/null)"
+  BW_MASTER_PASSWORD="$mp" command ~/bin/aac "$@"
+}
+
 # Navigation
 cx() { cd "$@" && l; }
 fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }

@@ -2,10 +2,10 @@
 setopt HIST_SAVE_NO_DUPS        # No duplicates in zsh history
 setopt prompt_subst              # Reevaluate prompt string each time
 
-# Auto-attach to tmux on terminal launch
-if [ -z "$TMUX" ]; then
-  exec tmux new-session -A -s main
-fi
+# Auto-attach to tmux on terminal launch (disabled; uncomment to re-enable)
+# if [ -z "$TMUX" ] && [ -t 0 ]; then
+#   exec tmux new-session -A -s main
+# fi
 
 # Completions
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'

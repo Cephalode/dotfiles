@@ -19,3 +19,5 @@ heroic/
 BambuStudio/cache
 BambuStudio/log
 BeeperTexts/
+keyd/.config/keyd/app.lock
+keyd/.config/keyd/app.log
