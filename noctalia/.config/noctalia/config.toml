@@ -34,7 +34,7 @@ order = [ "default" ]
     widget_spacing = 6
     start = [ "launcher", "clock", "cpu", "ram", "active_window", "media" ]
     center = [ "workspaces" ]
-    end = [ "tray", "notifications", "battery", "volume", "brightness", "control-center" ]
+    end = [ "tray", "notifications", "battery", "volume", "brightness", "eq-toggle", "control-center" ]
 
 [widget.cpu]
 stat = "cpu_usage"
@@ -46,6 +46,18 @@ type = "sysmon"
 
 [widget.active_window]
 type = "active_window"
+
+# DT 900 Pro X headphone EQ toggle (hapalo — eq lives in hosts/nixos/hapalo).
+# The guard keeps this widget harmless on hosts that have no `eq` command.
+[widget.eq-toggle]
+type = "custom_button"
+glyph = "wave-sine"
+tooltip = "Toggle DT 900 Pro X EQ"
+
+    [widget.eq-toggle.actions]
+    left = "exec eq toggle >/dev/null 2>&1 || true"
+    right = "exec eq status 2>/dev/null | noctalia dmenu -p EQ || true"
+    middle = "exec eq status || true"
 
 [theme]
 mode = "dark"
