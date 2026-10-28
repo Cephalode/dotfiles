@@ -12,7 +12,17 @@ alias ls='eza'
 
 # Editors
 alias svim='sudoedit'
+# Obsidian / notes (vault: ~/dev/notes → iCloud on macOS, git clone elsewhere)
+alias notes='cd "$OBSIDIAN_MAIN_DIR"'
+alias vn='nvim -c "ObsidianQuickSwitch"'
+alias nn='$XDG_CONFIG_HOME/scripts/on'
 alias claude='claude --dangerously-skip-permissions'
+
+# Hermes profiles
+alias argonauta='hermes -p default'
+alias ocythoe='hermes -p ocythoe'
+alias lunalata='hermes -p lunalata'
+alias thaumo='hermes -p thaumo'
 
 # Command shortcuts
 alias hist='history | grep'
